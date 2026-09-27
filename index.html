@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A beautiful random quote generator built with HTML, CSS and JavaScript">
+    <title>Random Quote Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="background-shape shape-one"></div>
+    <div class="background-shape shape-two"></div>
+
+    <main class="quote-container">
+
+        <div class="quote-card">
+
+            <div class="top-section">
+                <span class="badge">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    Daily Inspiration
+                </span>
+
+                <div class="quote-icon">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
+            </div>
+
+            <div class="quote-content" id="quoteContent">
+
+                <p id="quote">
+                    The secret of getting ahead is getting started.
+                </p>
+
+                <div class="divider"></div>
+
+                <h3 id="author">— Mark Twain</h3>
+
+            </div>
+
+            <div class="actions">
+
+                <button class="icon-btn" id="copyBtn" title="Copy Quote">
+                    <i class="fa-regular fa-copy"></i>
+                </button>
+
+                <button class="icon-btn" id="shareBtn" title="Share Quote">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </button>
+
+                <button class="new-quote-btn" id="newQuoteBtn">
+                    <span>New Quote</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+            <div class="quote-number">
+                <span id="quoteNumber">01</span>
+                <span class="line"></span>
+                <span>10+ Quotes</span>
+            </div>
+
+        </div>
+
+        <p class="footer-text">
+            Crafted with <i class="fa-solid fa-heart"></i> using HTML, CSS & JavaScript
+        </p>
+
+    </main>
+
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-check"></i>
+        <span>Quote copied!</span>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
